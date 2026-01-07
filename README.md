@@ -1,1 +1,1 @@
-https://app.netlify.com/projects/erden-portfolio/overview
+https://erden-portfolio.netlify.app/
