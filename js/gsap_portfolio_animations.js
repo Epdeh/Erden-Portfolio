@@ -467,6 +467,7 @@ if (isDesktop()) {
 // ========================================
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
+const menuBlock = document.querySelector('.menu_block');
 
 if (hamburger && menu) {
     hamburger.addEventListener('click', () => {
@@ -497,6 +498,13 @@ if (hamburger && menu) {
                 }
             });
         }
+
+        menu.addEventListener('click', (e) => {
+            if (!menuBlock.contains(e.target)) {
+                menu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
     });
 
     // Закрытие меню при клике на ссылку
